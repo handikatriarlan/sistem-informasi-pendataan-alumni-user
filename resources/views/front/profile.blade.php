@@ -62,7 +62,7 @@
 
                     <div>
                         <button type="submit"
-                            class="btn bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg w-full">
+                            class="btn bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg w-full">
                             Save Changes
                         </button>
                     </div>

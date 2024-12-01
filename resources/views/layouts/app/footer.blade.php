@@ -1,24 +1,24 @@
-<footer class="bg-gray-800 text-white py-12">
+<footer class="bg-green-800 text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
             <div>
                 <h3 class="text-lg font-semibold mb-4">About Us</h3>
-                <p class="text-gray-400">Connecting alumni and building stronger communities through shared
+                <p class="text-white-600">Connecting alumni and building stronger communities through shared
                     experiences.</p>
             </div>
             <div>
                 <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="/about.html" class="text-gray-400 hover:text-white transition">About</a></li>
-                    <li><a href="/events.html" class="text-gray-400 hover:text-white transition">Events</a></li>
-                    <li><a href="/news.html" class="text-gray-400 hover:text-white transition">News</a></li>
+                    <li><a href="/alumni" class="text-white-600 hover:text-gray-300 transition">Alumni</a></li>
+                    <li><a href="/events" class="text-white-600 hover:text-gray-300 transition">Events</a></li>
+                    <li><a href="/about" class="text-white-600 hover:text-gray-300 transition">About</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-lg font-semibold mb-4">Contact</h3>
                 <ul class="space-y-2">
-                    <li class="text-gray-400">Email: contact@alumniconnect.com</li>
-                    <li class="text-gray-400">Phone: (123) 456-7890</li>
+                    <li class="text-white-400">Email: contact@alumniconnect.com</li>
+                    <li class="text-white-400">Phone: (123) 456-7890</li>
                 </ul>
             </div>
             <div>
@@ -45,8 +45,8 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>© <span>2024</span> Alumni Connect. All rights reserved.</p>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-white-400">
+            <p>© <span>{{ Date('Y') }}</span> SMP Swasta Rahmat Islamiyah. Hak cipta dilindungi undang-undang.</p>
         </div>
     </div>
 </footer>

@@ -22,6 +22,19 @@
     .card {
         @apply bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300;
     }
+
+    /* Custom card animations */
+    .feature-card {
+        @apply bg-white rounded-xl shadow-md p-6 cursor-pointer transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-105;
+    }
+
+    .feature-card:hover .card-icon {
+        @apply scale-110 rotate-6;
+    }
+
+    .card-icon {
+        @apply transition-transform duration-300;
+    }
 }
 
 /* Custom animations */

@@ -26,7 +26,7 @@
 
             <div class="overflow-x-auto">
                 <table class="table-auto w-full border-collapse border border-gray-300">
-                    <thead class="bg-gray-800 text-white">
+                    <thead class="bg-green-800 text-white">
                         <tr>
                             <th class="border border-gray-300 px-4 py-2 text-left">Foto</th>
                             <th class="border border-gray-300 px-4 py-2 text-left">Nama</th>

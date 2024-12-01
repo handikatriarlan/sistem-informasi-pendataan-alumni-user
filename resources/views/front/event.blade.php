@@ -16,7 +16,7 @@
                                 <h3 class="text-xl font-semibold mb-2">Alumni Networking Night</h3>
                                 <p class="text-gray-600 mb-4">An evening of networking and sharing experiences with fellow
                                     alumni.</p>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more →</a>
+                                <a href="#" class="text-green-600 hover:text-green-800 font-medium">Learn more →</a>
                             </div>
                         </div>
 
@@ -28,7 +28,7 @@
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">Professional Development Workshop</h3>
                                 <p class="text-gray-600 mb-4">Enhance your skills with our expert-led workshop series.</p>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more →</a>
+                                <a href="#" class="text-green-600 hover:text-green-800 font-medium">Learn more →</a>
                             </div>
                         </div>
                         
@@ -41,7 +41,7 @@
                                 <h3 class="text-xl font-semibold mb-2">Alumni Networking Night</h3>
                                 <p class="text-gray-600 mb-4">An evening of networking and sharing experiences with fellow
                                     alumni.</p>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more →</a>
+                                <a href="#" class="text-green-600 hover:text-green-800 font-medium">Learn more →</a>
                             </div>
                         </div>
 
@@ -53,7 +53,7 @@
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">Professional Development Workshop</h3>
                                 <p class="text-gray-600 mb-4">Enhance your skills with our expert-led workshop series.</p>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more →</a>
+                                <a href="#" class="text-green-600 hover:text-green-800 font-medium">Learn more →</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                         <div>
                             <h4 class="font-medium">Tech Alumni Meetup</h4>
                             <p class="text-gray-600 text-sm mt-1">A great evening of tech talks and networking</p>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm mt-2 inline-block">View recap
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm mt-2 inline-block">View recap
                                 →</a>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                         <div>
                             <h4 class="font-medium">Business Leadership Forum</h4>
                             <p class="text-gray-600 text-sm mt-1">Insights from industry leaders</p>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm mt-2 inline-block">View recap
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm mt-2 inline-block">View recap
                                 →</a>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                         <div>
                             <h4 class="font-medium">Alumni Sports Day</h4>
                             <p class="text-gray-600 text-sm mt-1">Annual sports competition highlights</p>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm mt-2 inline-block">View recap
+                            <a href="#" class="text-green-600 hover:text-green-800 text-sm mt-2 inline-block">View recap
                                 →</a>
                         </div>
                     </div>

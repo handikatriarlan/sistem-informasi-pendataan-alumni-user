@@ -33,15 +33,16 @@
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <input type="checkbox" id="remember" name="remember"
-                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                                class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
                                 {{ old('remember') ? 'checked' : '' }}>
                             <label for="remember" class="ml-2 block text-sm text-gray-700">
                                 Remember me
                             </label>
                         </div>
                     </div>
-                    
-                    <button type="submit" class="w-full btn btn-primary">
+
+                    <button type="submit"
+                        class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition">
                         Login
                     </button>
                 </form>
@@ -49,7 +50,7 @@
                 {{-- <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600">
                         Don't have an account?
-                        <a href="/register" class="text-blue-600 hover:text-blue-500 font-medium">
+                        <a href="/register" class="text-green-600 hover:text-green-500 font-medium">
                             Register
                         </a>
                     </p>
