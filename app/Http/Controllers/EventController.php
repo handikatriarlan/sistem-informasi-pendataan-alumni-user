@@ -12,7 +12,11 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('front.event');
+        $data = [
+            'pageTitle' => 'Event',
+        ];
+
+        return view('front.event', $data);
     }
 
     /**

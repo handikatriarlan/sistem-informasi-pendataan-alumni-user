@@ -11,7 +11,11 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('front.about');
+        $data = [
+            'pageTitle' => 'About',
+        ];
+
+        return view('front.about', $data);
     }
 
     /**
