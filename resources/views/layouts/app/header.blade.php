@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
             <a href="/" class="flex items-center space-x-2">
-                <span class="font-bold text-xl hidden sm:block">SMP Yayasan Perguruan Rahmat Islamiyah</span>
+                <span class="font-bold text-xl hidden sm:block">SMP Swasta Rahmat Islamiyah</span>
             </a>
 
             <!-- Desktop Navigation -->
