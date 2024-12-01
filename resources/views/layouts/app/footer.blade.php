@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-white-400">
+        <div class="border-t border-gray-700 mt-8 pt-11 text-center text-white-400">
             <p>© <span>{{ Date('Y') }}</span> SMP Swasta Rahmat Islamiyah. Hak cipta dilindungi undang-undang.</p>
         </div>
     </div>

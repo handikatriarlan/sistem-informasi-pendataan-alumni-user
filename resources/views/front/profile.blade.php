@@ -28,34 +28,45 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                            <input type="text" id="name" name="name" class="input" value="John Doe">
+                            <input type="text" id="name" name="name"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="John Doe">
                         </div>
 
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" name="email" class="input" value="john@example.com">
+                            <input type="email" id="email" name="email"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="john@example.com">
                         </div>
 
                         <div>
                             <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
-                            <input type="password" id="password" name="password" class="input" value="password123">
+                            <input type="password" id="password" name="password"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="password123">
                         </div>
 
                         <div>
                             <label for="tanggal_lahir" class="block text-sm font-medium text-gray-700 mb-1">Date of
                                 Birth</label>
-                            <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="input" value="1995-01-01">
+                            <input type="date" id="tanggal_lahir" name="tanggal_lahir"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="1995-01-01">
                         </div>
 
                         <div>
                             <label for="tempat_lahir" class="block text-sm font-medium text-gray-700 mb-1">Place of
                                 Birth</label>
-                            <input type="text" id="tempat_lahir" name="tempat_lahir" class="input" value="Medan">
+                            <input type="text" id="tempat_lahir" name="tempat_lahir"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="Medan">
                         </div>
 
                         <div>
                             <label for="jenis_kelamin" class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
-                            <select id="jenis_kelamin" name="jenis_kelamin" class="input">
+                            <select id="jenis_kelamin" name="jenis_kelamin"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300">
                                 <option value="Laki-laki">Laki-laki</option>
                                 <option value="Perempuan">Perempuan</option>
                             </select>
@@ -63,35 +74,44 @@
 
                         <div>
                             <label for="nis" class="block text-sm font-medium text-gray-700 mb-1">NIS</label>
-                            <input type="text" id="nis" name="nis" class="input" value="12345678">
+                            <input type="text" id="nis" name="nis"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="12345678">
                         </div>
 
                         <div>
                             <label for="tahun_lulus" class="block text-sm font-medium text-gray-700 mb-1">Graduation
                                 Year</label>
-                            <input type="number" id="tahun_lulus" name="tahun_lulus" class="input" value="2020">
+                            <input type="number" id="tahun_lulus" name="tahun_lulus"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="2020">
                         </div>
 
                         <div class="md:col-span-3">
                             <label for="alamat" class="block text-sm font-medium text-gray-700 mb-1">Address</label>
-                            <textarea id="alamat" name="alamat" rows="4" class="input">Jl. Example No. 123, Medan</textarea>
+                            <textarea id="alamat" name="alamat" rows="4"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300">Jl. Example No. 123, Medan</textarea>
                         </div>
 
                         <div>
                             <label for="no_phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                            <input type="text" id="no_phone" name="no_phone" class="input" value="08123456789">
+                            <input type="text" id="no_phone" name="no_phone"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
+                                value="08123456789">
                         </div>
 
                         <div>
                             <label for="pendidikan_lanjut" class="block text-sm font-medium text-gray-700 mb-1">Continuing
                                 Education</label>
-                            <input type="text" id="pendidikan_lanjut" name="pendidikan_lanjut" class="input"
+                            <input type="text" id="pendidikan_lanjut" name="pendidikan_lanjut"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
                                 value="S2 Informatics Engineering">
                         </div>
 
                         <div>
                             <label for="pekerjaan" class="block text-sm font-medium text-gray-700 mb-1">Occupation</label>
-                            <input type="text" id="pekerjaan" name="pekerjaan" class="input"
+                            <input type="text" id="pekerjaan" name="pekerjaan"
+                                class="input focus:border-green-500 focus:ring-2 focus:ring-green-500 border-gray-300"
                                 value="Software Engineer">
                         </div>
                     </div>
