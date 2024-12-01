@@ -8,31 +8,39 @@
                     <h1 class="text-2xl font-bold">Welcome Back</h1>
                     <p class="text-gray-600 mt-2">Please sign in to your account</p>
                 </div>
-
                 <form method="POST" action="{{ route('login') }}" id="login-form" class="space-y-6">
                     @csrf
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                        <input type="email" id="email" name="email" required class="input w-full"
-                            placeholder="john@example.com">
+                        <label for="nis" class="block text-sm font-medium text-gray-700 mb-1">NIS</label>
+                        <input type="number" id="nis" name="nis" required class="input w-full" placeholder="NIS"
+                            value="{{ old('nis') }}">
+
+                        @error('nis')
+                            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div>
                         <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
                         <input type="password" id="password" name="password" required class="input w-full"
-                            placeholder="••••••••">
+                            placeholder="Password">
+
+                        @error('password')
+                            <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <input type="checkbox" id="remember" name="remember"
-                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                                {{ old('remember') ? 'checked' : '' }}>
                             <label for="remember" class="ml-2 block text-sm text-gray-700">
                                 Remember me
                             </label>
                         </div>
                     </div>
-
+                    
                     <button type="submit" class="w-full btn btn-primary">
                         Login
                     </button>

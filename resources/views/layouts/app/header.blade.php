@@ -9,13 +9,24 @@
             <nav class="hidden md:flex space-x-6">
                 <a href="/" class="hover:text-blue-400 transition mt-2">Home</a>
                 <a href="/alumni" class="hover:text-blue-400 transition mt-2">Alumni</a>
-                <a href="/event" class="hover:text-blue-400 transition mt-2">Events</a>
-                <a href="/contact" class="hover:text-blue-400 transition mt-2">Contact</a>
-                <a href="/login" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
-                    Log in
-                </a>
-            </nav>
+                <a href="/events" class="hover:text-blue-400 transition mt-2">Events</a>
+                <a href="/about" class="hover:text-blue-400 transition mt-2">About</a>
 
+                @if (Auth::check())
+                    <a href="/profile" class="hover:text-blue-400 transition mt-2">Profile</a>
+                    <form method="POST" action="{{ route('logout') }}" class="inline">
+                        @csrf
+                        <button type="submit"
+                            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition">
+                            Log out
+                        </button>
+                    </form>
+                @else
+                    <a href="/login" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">
+                        Log in
+                    </a>
+                @endif
+            </nav>
 
             <!-- Mobile Menu Button -->
             <button id="menu-button" class="md:hidden p-2">
@@ -29,11 +40,24 @@
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             <nav class="flex flex-col space-y-3">
                 <a href="/" class="hover:text-blue-400 transition py-2">Home</a>
-                <a href="/alumni.html" class="hover:text-blue-400 transition py-2">Alumni</a>
-                <a href="/events.html" class="hover:text-blue-400 transition py-2">Events</a>
-                <a href="/contact.html" class="hover:text-blue-400 transition py-2">Contact</a>
-                <a href="/login.html"
-                    class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-center">Log in</a>
+                <a href="/alumni" class="hover:text-blue-400 transition py-2">Alumni</a>
+                <a href="/events" class="hover:text-blue-400 transition py-2">Events</a>
+                <a href="/about" class="hover:text-blue-400 transition py-2">About</a>
+
+                @if (Auth::check())
+                    <a href="/profile" class="hover:text-blue-400 transition py-2">Profile</a>
+                    <form method="POST" action="{{ route('logout') }}" class="inline">
+                        @csrf
+                        <button type="submit"
+                            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition">
+                            Log out
+                        </button>
+                    </form>
+                @else
+                    <a href="/login" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-center">
+                        Log in
+                    </a>
+                @endif
             </nav>
         </div>
     </div>
