@@ -12,7 +12,7 @@ class AboutController extends Controller
     public function index()
     {
         $data = [
-            'pageTitle' => 'About',
+            'pageTitle' => 'Tentang Kami',
         ];
 
         return view('front.about', $data);

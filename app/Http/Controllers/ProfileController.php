@@ -13,7 +13,7 @@ class ProfileController extends Controller
     public function index()
     {
         $data = [
-            'pageTitle' => 'Profile',
+            'pageTitle' => 'Profil',
         ];
 
         return view('front.profile', $data);

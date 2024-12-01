@@ -13,7 +13,7 @@ class EventController extends Controller
     public function index()
     {
         $data = [
-            'pageTitle' => 'Event',
+            'pageTitle' => 'Acara',
             'events' => Event::where('status', 1)->get(),
             'eventLimits' => Event::latest()->limit('3')->get(),
         ];

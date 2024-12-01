@@ -16,7 +16,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
     Route::get('/alumni/filter', [AlumniController::class, 'index']);
 
-
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::post('/profile', [ProfileController::class, 'store'])->name('profile.store');
 });
