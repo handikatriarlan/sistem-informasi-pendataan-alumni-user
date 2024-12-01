@@ -9,9 +9,9 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="/alumni" class="text-white-600 hover:text-gray-300 transition">Alumni</a></li>
-                    <li><a href="/events" class="text-white-600 hover:text-gray-300 transition">Events</a></li>
-                    <li><a href="/about" class="text-white-600 hover:text-gray-300 transition">About</a></li>
+                    <li><a href="{{ route('alumni') }}" class="text-white-600 hover:text-gray-300 transition">Alumni</a></li>
+                    <li><a href="{{ route('events') }}" class="text-white-600 hover:text-gray-300 transition">Events</a></li>
+                    <li><a href="{{ route('about') }}" class="text-white-600 hover:text-gray-300 transition">About</a></li>
                 </ul>
             </div>
             <div>

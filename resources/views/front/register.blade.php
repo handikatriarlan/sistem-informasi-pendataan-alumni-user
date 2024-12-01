@@ -49,16 +49,6 @@
                             placeholder="••••••••">
                     </div>
 
-                    <div class="flex items-center">
-                        <input type="checkbox" id="terms" name="terms" required
-                            class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
-                        <label for="terms" class="ml-2 block text-sm text-gray-700">
-                            I agree to the <a href="/terms.html" class="text-green-600 hover:text-green-500">Terms of
-                                Service</a> and
-                            <a href="/privacy.html" class="text-green-600 hover:text-green-500">Privacy Policy</a>
-                        </label>
-                    </div>
-
                     <button type="submit"
                         class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition">
                         Create Account
@@ -68,7 +58,7 @@
                 <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600">
                         Already have an account?
-                        <a href="/login.html" class="text-green-600 hover:text-green-500 font-medium">
+                        <a href="{{ route('login') }}" class="text-green-600 hover:text-green-500 font-medium">
                             Sign in
                         </a>
                     </p>

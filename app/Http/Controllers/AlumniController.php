@@ -12,7 +12,7 @@ class AlumniController extends Controller
      */
     public function index()
     {
-        //
+        return view('front.alumni');
     }
 
     /**

@@ -50,7 +50,7 @@
                 {{-- <div class="mt-6 text-center">
                     <p class="text-sm text-gray-600">
                         Don't have an account?
-                        <a href="/register" class="text-green-600 hover:text-green-500 font-medium">
+                        <a href="{{ route('register') }}" class="text-green-600 hover:text-green-500 font-medium">
                             Register
                         </a>
                     </p>

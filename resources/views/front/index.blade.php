@@ -9,12 +9,12 @@
                     <p class="text-xl mb-8">Stay connected with your alma mater and fellow graduates. Build lasting
                         relationships and grow your professional network.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="/events"
+                        <a href="{{ route('events') }}"
                             class="bg-white text-green-600 border-2 border-green-600 hover:bg-transparent hover:border-white hover:text-white px-8 py-3 rounded-lg font-semibold transition">
                             Events
                         </a>
 
-                        <a href="/abut"
+                        <a href="{{ route('about') }}"
                             class="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-lg font-semibold transition">
                             About
                         </a>
