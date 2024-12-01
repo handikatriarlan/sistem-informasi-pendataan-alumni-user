@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/alumni/filter', [AlumniController::class, 'index']);
 
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
-    Route::post('/profile', [ProfileController::class, 'store'])->name('profile.store');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 // Route::get('/register', function () {

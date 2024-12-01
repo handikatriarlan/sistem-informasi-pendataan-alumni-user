@@ -14,6 +14,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/main.js')
     @vite('resources/js/alumni.js')
+    @vite('resources/js/profile.js')
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
