@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Alumni;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,27 @@ class AlumniController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('front.alumni');
+        $query = User::where('role', 'alumni');
+
+        if ($request->has('batch') && $request->batch) {
+            $query->where('tahun_lulus', $request->batch);
+        }
+
+        if ($request->has('search') && $request->search) {
+            $query->where('name', 'like', '%' . $request->search . '%');
+        }
+
+        $alumnis = $query->get();
+
+        $pageTitle = 'Alumni';
+
+        if ($request->ajax()) {
+            return view('front.alumni-list', compact('alumnis'));
+        }
+
+        return view('front.alumni', compact('alumnis', 'pageTitle'));
     }
 
     /**

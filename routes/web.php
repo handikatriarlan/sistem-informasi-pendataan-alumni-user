@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 
@@ -12,9 +13,9 @@ use App\Http\Controllers\ProfileController;
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/alumni', function () {
-        return view('front.alumni');
-    })->name('alumni');
+    Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni');
+    Route::get('/alumni/filter', [AlumniController::class, 'index']);
+
 
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::post('/profile', [ProfileController::class, 'store'])->name('profile.store');
