@@ -14,6 +14,8 @@ class EventController extends Controller
     {
         $data = [
             'pageTitle' => 'Event',
+            'events' => Event::where('status', 1)->get(),
+            'eventLimits' => Event::latest()->limit('3')->get(),
         ];
 
         return view('front.event', $data);

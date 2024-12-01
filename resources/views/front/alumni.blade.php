@@ -32,7 +32,7 @@
                 <table class="min-w-full table-auto text-sm text-center text-dark-600">
                     <thead class="bg-gray-100 text-gray-700">
                         <tr>
-                            <th class="px-6 py-3 border-b border-gray-300">No.</th>
+                            <th class="px-4 py-3 border-b border-gray-300">No.</th>
                             <th class="px-6 py-3 border-b border-gray-300">Foto</th>
                             <th class="px-6 py-3 border-b border-gray-300">Nama</th>
                             <th class="px-6 py-3 border-b border-gray-300">Jenis Kelamin</th>

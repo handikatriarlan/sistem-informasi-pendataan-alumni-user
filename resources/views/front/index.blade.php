@@ -3,11 +3,12 @@
 @section('content')
     <main>
         <section class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-20">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto ">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Selamat Datang <br> Alumni SMP Rahmat Islamiyah</h1>
-                    <p class="text-xl mb-8">Tetap terhubung dengan sesama lulusan. Bangun hubungan yang langgeng dan
-                        kembangkan jaringan profesional Anda.</p>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-12 mt-[-50px]">Selamat Datang <br> Alumni SMP Rahmat
+                        Islamiyah</h1>
+                    <p class="text-xl mb-8 mt-[-20px]">Tetap terhubung dengan sesama lulusan. Bangun hubungan yang langgeng
+                        dan kembangkan jaringan profesional Anda.</p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="{{ route('events') }}"
                             class="bg-white text-green-600 border-2 border-green-600 hover:bg-transparent hover:border-white hover:text-white px-8 py-3 rounded-lg font-semibold transition">
