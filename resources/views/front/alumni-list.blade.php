@@ -1,7 +1,10 @@
 @forelse ($alumnis as $alumni)
     <tr class="hover:bg-gray-50 transition duration-300">
         <td class="px-6 py-4 border-b border-gray-300">
-            <img src="{{ Storage::url($alumni->gambar) }}" alt="Foto Alumni" class="w-16 h-16 rounded-full mx-auto">
+            <div class="w-16 h-16 overflow-hidden mx-auto rounded-full">
+                <img src="{{ asset('storage_admin/' . $alumni->foto) }}" alt="Foto Alumni"
+                    class="w-full h-full object-cover">
+            </div>
         </td>
         <td class="px-6 py-4 border-b border-gray-300">{{ $alumni->name ?? '–' }}</td>
         <td class="px-6 py-4 border-b border-gray-300">{{ $alumni->jenis_kelamin ?? '–' }}</td>

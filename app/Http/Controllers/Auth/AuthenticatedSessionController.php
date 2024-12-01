@@ -16,7 +16,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view(view: 'front.login');
+        $data = [
+            'pageTitle' => 'Login',
+        ];
+
+        return view('front.login', $data);
     }
 
     /**
