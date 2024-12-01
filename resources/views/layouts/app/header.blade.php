@@ -7,23 +7,23 @@
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-6">
-                <a href="{{ route('home') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Home</a>
+                <a href="{{ route('home') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Beranda</a>
                 <a href="{{ route('alumni') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Alumni</a>
-                <a href="{{ route('events') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Events</a>
-                <a href="{{ route('about') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">About</a>
+                <a href="{{ route('events') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Acara</a>
+                <a href="{{ route('about') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Tentang Kami</a>
 
                 @if (Auth::check())
-                    <a href="{{ route('profile') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Profile</a>
+                    <a href="{{ route('profile') }}" class="hover:bg-green-500 hover:bg-opacity-30 text-white transition py-2 px-2 rounded-md">Profil</a>
                     <form method="POST" action="{{ route('logout') }}" class="inline">
                         @csrf
                         <button type="submit"
                             class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition">
-                            Log out
+                            Keluar
                         </button>
                     </form>
                 @else
                     <a href="{{ route('login') }}" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">
-                        Log in
+                        Masuk
                     </a>
                 @endif
             </nav>
@@ -39,23 +39,23 @@
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             <nav class="flex flex-col space-y-3">
-                <a href="{{ route('home') }}" class="hover:text-green-400 transition py-2">Home</a>
+                <a href="{{ route('home') }}" class="hover:text-green-400 transition py-2">Beranda</a>
                 <a href="{{ route('alumni') }}" class="hover:text-green-400 transition py-2">Alumni</a>
-                <a href="{{ route('events') }}" class="hover:text-green-400 transition py-2">Events</a>
-                <a href="{{ route('about') }}" class="hover:text-green-400 transition py-2">About</a>
+                <a href="{{ route('events') }}" class="hover:text-green-400 transition py-2">Acara</a>
+                <a href="{{ route('about') }}" class="hover:text-green-400 transition py-2">Tentang Kami</a>
 
                 @if (Auth::check())
-                    <a href="{{ route('profile') }}" class="hover:text-green-400 transition py-2">Profile</a>
+                    <a href="{{ route('profile') }}" class="hover:text-green-400 transition py-2">Profil</a>
                     <form method="POST" action="{{ route('logout') }}" class="inline">
                         @csrf
                         <button type="submit"
                             class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition">
-                            Log out
+                            Keluar
                         </button>
                     </form>
                 @else
                     <a href="{{ route('login') }}" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-center">
-                        Log in
+                        Masuk
                     </a>
                 @endif
             </nav>

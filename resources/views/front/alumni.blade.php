@@ -32,11 +32,12 @@
                 <table class="min-w-full table-auto text-sm text-center text-dark-600">
                     <thead class="bg-gray-100 text-gray-700">
                         <tr>
+                            <th class="px-6 py-3 border-b border-gray-300">No.</th>
                             <th class="px-6 py-3 border-b border-gray-300">Foto</th>
-                            <th class="px-6 py-3 border-b border-gray-300">Name</th>
+                            <th class="px-6 py-3 border-b border-gray-300">Nama</th>
                             <th class="px-6 py-3 border-b border-gray-300">Jenis Kelamin</th>
                             <th class="px-6 py-3 border-b border-gray-300">Alamat</th>
-                            <th class="px-6 py-3 border-b border-gray-300">No Phone</th>
+                            <th class="px-6 py-3 border-b border-gray-300">No. HP</th>
                             <th class="px-6 py-3 border-b border-gray-300">Email</th>
                             <th class="px-6 py-3 border-b border-gray-300">Pendidikan Lanjut</th>
                             <th class="px-6 py-3 border-b border-gray-300">Pekerjaan</th>

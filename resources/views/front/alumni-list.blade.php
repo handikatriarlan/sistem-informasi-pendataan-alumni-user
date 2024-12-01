@@ -1,5 +1,7 @@
+@php $index = 1; @endphp
 @forelse ($alumnis as $alumni)
     <tr class="hover:bg-gray-50 transition duration-300">
+        <td class="px-6 py-4 border-b border-gray-300">{{ $index++ }}</td>
         <td class="px-6 py-4 border-b border-gray-300">
             <div class="w-16 h-16 overflow-hidden mx-auto rounded-full">
                 <img src="{{ asset('storage_admin/' . $alumni->foto) }}" alt="Foto Alumni"
