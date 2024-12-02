@@ -63,7 +63,7 @@ class ProfileController extends Controller
 
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'foto' => 'required|string|max:255',
+            'foto' => 'nullable|string|max:255',
             'email' => 'nullable|email|max:255|unique:users,email,' . $user->id,
             'tanggal_lahir' => 'nullable|date',
             'tempat_lahir' => 'nullable|string|max:255',
@@ -83,9 +83,8 @@ class ProfileController extends Controller
             $validatedData['password'] = $user->password;
         }
 
-        $user->update([
+        $updateData = [
             'name' => $validatedData['name'],
-            'foto' => $validatedData['foto'],
             'email' => $validatedData['email'],
             'tanggal_lahir' => $validatedData['tanggal_lahir'],
             'tempat_lahir' => $validatedData['tempat_lahir'],
@@ -97,10 +96,17 @@ class ProfileController extends Controller
             'pendidikan_lanjut' => $validatedData['pendidikan_lanjut'] ?? $user->pendidikan_lanjut,
             'pekerjaan' => $validatedData['pekerjaan'] ?? $user->pekerjaan,
             'password' => $validatedData['password'],
-        ]);
+        ];
+
+        if ($request->filled('foto')) {
+            $updateData['foto'] = $validatedData['foto'];
+        }
+
+        $user->update($updateData);
 
         return redirect()->route('profile')->with('success', 'Profile updated successfully!');
     }
+
 
     /**
      * Remove the specified resource from storage.
